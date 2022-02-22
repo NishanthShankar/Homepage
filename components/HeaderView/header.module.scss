@@ -1,0 +1,41 @@
+.container {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  flex:1;
+  min-width: 72px;
+  align-items: center;
+  background-color:#f72079;
+  transition: min-width 1s, flex 1s;
+  &.closed {
+    flex:0;
+    transition: min-width 1s, flex 1s;
+  }
+  &.partial {
+    flex:0;
+    min-width:172px;
+    transition: min-width 1s, flex 1s;
+  }
+}
+
+.logoCtn {
+  height: 32px;
+  width: 32px;
+  // background-color: cyan;
+}
+.linkCtn {
+  list-style-type: none;
+  display: flex;
+  flex:1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  li {
+    color: #f8cd82;
+    margin-left: 12px
+  }
+  a {
+    color: #f8cd82;
+  }
+}
+
